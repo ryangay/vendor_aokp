@@ -1,5 +1,5 @@
-# Inherit AOSP device configuration for crespo.
-$(call inherit-product, device/samsung/crespo/skate.mk)
+# Inherit AOSP device configuration for skate.
+$(call inherit-product, device/zte/skate/skate.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
@@ -17,8 +17,8 @@ PRODUCT_MODEL := Skate
 PRODUCT_MANUFACTURER := ZTE
 
 
-PRODUCT_PACKAGES += \
-    Thinkfree
+#PRODUCT_PACKAGES += \
+#      Thinkfree
 
 PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
