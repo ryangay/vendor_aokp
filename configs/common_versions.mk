@@ -6,11 +6,6 @@ DATE = $(shell date +%h-%d-%y)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.aokp.version=$(TARGET_PRODUCT)_jb-build-1
 
-# Goo updater app
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.goo.developerid=aokp \
-    ro.goo.rom=aokp \
-    ro.goo.version=21
 
 # Camera shutter sound property
 PRODUCT_PROPERTY_OVERRIDES += \
