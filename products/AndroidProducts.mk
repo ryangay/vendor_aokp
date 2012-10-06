@@ -1,6 +1,6 @@
 PRODUCT_MAKEFILES := \
 <<<<<<< HEAD
-    $(LOCAL_DIR)/skate.mk
+    $(LOCAL_DIR)/skate.mk \
 =======
     $(LOCAL_DIR)/captivatemtd.mk \
     $(LOCAL_DIR)/crespo.mk \
