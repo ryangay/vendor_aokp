@@ -21,15 +21,12 @@ $(call inherit-product, vendor/aokp/configs/gsm.mk)
 PRODUCT_RELEASE_NAME := p3113
 
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_1024_600.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_1024_600_ccw90.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/espressowifi
 
-PRODUCT_PACKAGES += \
-    NovaLauncher
-
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/aokp/configs/common_tablet.mk)
+# Inherit some common stuff.
+$(call inherit-product, vendor/aokp/configs/common_tablet_small.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/p3113/full_p3113.mk)
